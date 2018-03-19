@@ -148,7 +148,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.btn_connect_server:
                 if (btnSendMessage.isEnabled()) {
-                    // 如果可以发送消息说明是相连着的
+                    // 如果客户端可以发送消息，说明与服务端相连
                     disconnectToServer();
                 } else {
                     if (threadPool == null || threadPool.isShutdown()) {
